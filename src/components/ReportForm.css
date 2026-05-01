@@ -1,0 +1,144 @@
+/* Report Form - Modern Card Layout */
+
+.report-page {
+  max-width: 700px;
+  margin: 80px auto 40px;
+  padding: var(--spacing-xl);
+  background: var(--surface);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--border-light);
+  animation: scaleIn 0.4s ease-out;
+}
+
+.report-page h2 {
+  text-align: center;
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xl);
+  color: var(--text-primary);
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.5px;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.report-form input,
+.report-form textarea {
+  width: 100%;
+  padding: var(--spacing-md) var(--spacing-md);
+  border: 2px solid var(--border);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  background: var(--surface-light);
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  transition: all var(--transition-base);
+}
+
+.report-form input::placeholder,
+.report-form textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.report-form input:hover,
+.report-form textarea:hover {
+  border-color: var(--primary-light);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.report-form input:focus,
+.report-form textarea:focus {
+  background: var(--surface);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+  outline: none;
+}
+
+.report-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.cd-btn-primary {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: white;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  margin-top: var(--spacing-md);
+  transition: all var(--transition-base);
+  letter-spacing: 0.3px;
+  box-shadow: var(--shadow-lg);
+  text-transform: uppercase;
+  font-family: var(--font-family);
+}
+
+.cd-btn-primary:hover {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-xl);
+}
+
+.cd-btn-primary:active {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.success-text {
+  text-align: center;
+  color: var(--success);
+  margin-top: var(--spacing-lg);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  animation: slideInUp 0.3s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .report-page {
+    margin: 76px 16px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .report-page {
+    margin: 72px 12px 20px;
+    padding: var(--spacing-lg);
+  }
+
+  .report-page h2 {
+    font-size: var(--font-size-xl);
+  }
+
+  .report-form {
+    gap: var(--spacing-lg);
+  }
+
+  .report-form input,
+  .report-form textarea {
+    padding: 0.75rem;
+  }
+
+  .cd-btn-primary {
+    padding: 0.75rem var(--spacing-md);
+    font-size: var(--font-size-sm);
+  }
+}
+  }
+
+  .report-page h2 {
+    font-size: 22px;
+  }
+}
